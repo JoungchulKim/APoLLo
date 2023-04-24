@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450">
+    <title>APoLLo ENTERTAIN</title>
+    <!--weekly swiper-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/apollo.css">
+    <!--파비콘-->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!--notosans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!--josefin-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="logo">
+            <a href="./index2.html"><img src="./images/main_logo.png" height="90px" width="175px" alt="로고이미지"></a>
+        </h1>
+        <ul id="gnb">
+            <li><a href="./aboutus.html"><span class="josefin">ABOUT US</span></a></li>
+            <li><a href="./tap.html"><span class="josefin">CONCERT&FESTIVAL</span></a></li>
+            <li><a href="./schedule.html"><span class="josefin">SCHDULE</span></a></li>
+            <li><a href="./audition_apply.html"><span class="josefin">AUDITION&APPLY</span></a></li>
+        </ul>
+    </div><!--header-->
+    <!-- Swiper -->
+    <div class="swiper mainbanner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="./schedule.html"><img src="./images/tripper_banner.png" alt="메인이미지1"></a>
+            </div>
+            <div class="swiper-slide"><a href="./schedule.html"><img src="./images/Clouded_moon_play_banner .psd.png"
+                        alt="메인이미지2"></a></div>
+            <div class="swiper-slide"><a href="./schedule.html"><img src="./images/LAUNDRY.banner.jpg" alt="메인이미지3"></a>
+            </div>
+        </div>
+        <div class="swiper-button-next mbnext"></div>
+        <div class="swiper-button-prev mbprev"></div>
+    </div><!--mainbanner-->
+    <div id="container_bg">
+        <div id="container">
+            <!--가운데정렬-->
+            <h1><img src="./images/text/concert&festival.png" alt="타이틀1"></h1>
+            <div id="all_search">
+                <div class="search">
+                    <input type="text" placeholder="공연 찾기" style="background-image: url(./images/ICON/search.png) ;">
+                </div>
+                <!--selection-->
+                <form>
+                    <label for="year">
+                    </label>
+                    <select id="year" name="year">
+                        <option> 년도 </option>
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                    </select>
+                </form>
+                <!--selection2-->
+                <form>
+                    <label for="kind">
+                    </label>
+                    <select id="kind" name="artist">
+                        <option> 카테고리</option>
+                        <option>뮤지컬</option>
+                        <option>연극</option>
+                        <option>페스티벌</option>
+                    </select>
+                </form>
+            </div><!--all_search-->
+
+            <div class="swiper concert">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="./tap.html"><img src="./images/concert poster/poster1.png" alt="1">
+                            <h3>마리 앙투아네트 <span class="small">(뮤지컬)</span></h3>
+                            <h3>23.01.15 ~ 03. 15</h3>
+                            <p>고양 어울림 극장</p>
+                        </a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <a href="./tap.html"> <img src="./images/concert poster/poster2.png" alt="베스트아트2">
+                            <h3>구름과 달이 만날 때 <span class="small">(연극)</span></h3>
+                            <h3>23.04.15 ~ 05.21</h3>
+                            <p>예술의 전당 자유 소극장</p>
+                        </a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <a href="./tap.html"> <img src="./images/concert poster/poster3.png" alt="베스트아트1">
+                            <h3>빨래 <span class="small">(뮤지컬)</span></h3>
+                            <h3>23.01.27 ~ 07.02</h3>
+                            <p>부산 가온 아트홀 1관</p>
+                        </a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <a href="./tap.html"><img src="./images/concert poster/poster4.png" alt="베스트아트4">
+                            <h3>슈퍼스타 지져스 크라이스트 <span class="small">(뮤지컬)</span></h3>
+                            <h3>23.03.26 ~ 05.09</h3>
+                            <p>샤롯데 씨어터</p>
+                        </a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <a href="./tap.html"><img src="./images/concert poster/poster5.png" alt="베스트아트5">
+                            <h3>국악 한마당 <span class="small">(마당놀이)</span></h3>
+                            <h3>23.05.04 ~ 04.18</h3>
+                            <p>국립국악원 예악당</p>
+                        </a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <a href="./tap.html"> <img src="./images/concert poster/poster6.png" alt="베스트아트6">
+                            <h3>MED EDM FESTIVAL <span class="small">(페스티벌)</span></h3>
+                            <h3>23.05.26</h3>
+                            <p>가평 자라섬 캠핑장</p>
+                        </a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <a href="./tap.html"><img src="./images/concert poster/poster7.png" alt="베스트아트7">
+                            <h3>트리퍼 내한공연<span class="small">(콘서트)</span></h3>
+                            <h3>23.04.28 ~ 04.29</h3>
+                            <p>잠실 실내 체육관</p>
+                        </a>
+                    </div><!--swiper-slide-->
+                </div><!--swiper-wrapper-->
+                <div class="swiper-pagination"></div>
+            </div>
+            <a class="con_more" href="./tap.html"><img src="./images/ICON/more.png" alt="더보기"></a>
+        </div><!--container-->
+    </div><!--container_bg-->
+    <div id="weekly">
+        <div id="news"><!--weekly 시작점-->
+            <!--마진오토-->
+            <div class="swiper card"><!--swiper는 필수 클래스, 그 옆의 클래스는 보조 클래스-->
+                <div class="swiper-wrapper"><!--swiper-wrapper는 필수 클래스-->
+                    <div class="swiper-slide">
+                        <!--swiper-slide는 필수 클래스-->
+                        <a href="./schedule.html"> <img src="./images/weeklyposter/weekly1stposter.png" alt="메인배너1">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./schedule.html"> <img src="./images/weeklyposter/weekly2ndposter.png" alt="메인배너2">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./schedule.html"> <img src="./images/weeklyposter/weekly3rdposter.png" alt="메인배너3">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <!--swiper-slide는 필수 클래스-->
+                        <a href="./schedule.html"> <img src="./images/weeklyposter/weekly1stposter.png" alt="메인배너1">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./schedule.html"> <img src="./images/weeklyposter/weekly2ndposter.png" alt="메인배너2">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./schedule.html"> <img src="./images/weeklyposter/weekly3rdposter.png" alt="메인배너3">
+                        </a>
+
+                    </div>
+                </div>
+
+            </div><!--mb E-->
+            <!--화살표추가-->
+        </div><!--new(weekly 끝)-->
+        <a class='weekly_more' href="./schedule.html">
+            <img src="./images/ICON/more.png" alt="더보기">
+        </a>
+    </div><!--container-->
+
+    <div id="content">
+        <h1><img src="./images/text/youtubepng.png" alt="youtube_title"></h1>
+        <!-- youtube-->
+        <ul class="youtube_box">
+            <li>
+                <a target="_blank" href="https://www.youtube.com/">
+                    <img src="images/youtube/1st_inter.png" alt="유툽1">
+                </a>
+                <div class="h_box">
+                    <h2>마리 앙투아네트 - 마그리 아리노 <span class="small">역 <br> 밀라 쿠니스 인터뷰 영상 </span></h2>
+                </div>
+            </li>
+
+            <li>
+                <a target="_blank" href="https://www.youtube.com/">
+                    <img src="images/youtube/stagemanager.png" alt="인터뷰">
+                </a>
+                <div class="h_box">
+                    <h2>무대감독 인터뷰 영상 <br><span class="josefin"> "Thomas Marker</span>(토마스마커)</h2>
+                </div>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.youtube.com/">
+                    <img src="images/youtube/jack_inter.png" alt="인터뷰">
+                </a>
+                <div class="h_box">
+                    <h2><span class="josefin"> Talk Wave</span>(1화)<br> "잭 다니얼" 편</h2>
+                </div>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.youtube.com/">
+                    <img src="images/youtube/tear_down.png" alt="철거">
+                </a>
+                <div class="h_box">
+                    <h2>구름과 달이 만날 때 <br> 무대 셋업 현장</h2>
+                </div>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.youtube.com/">
+                    <img src="images/youtube/staff_inter.png" alt="인터뷰">
+                </a>
+                <div class="h_box">
+                    <h2>뮤지컬 "빨래" <br>의상 팀에게 묻다! <br>10문10답 </h2>
+                </div>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.youtube.com/">
+                    <img src="images/youtube/korea_show.png" alt="내한공연">
+                </a>
+                <div class="h_box">
+                    <h2> TRIPPER 내한공연 <br> 오프닝 무대</h2>
+                </div>
+            </li>
+
+
+            </li>
+        </ul>
+        <a target="_blank" href="https://www.youtube.com/"><img src="./images/ICON/more.png" alt="더보기"
+                class="youtube_more"></a>
+    </div><!--content-->
+    <div id="notice">
+        <h1 class="notice_title">
+            <img src="./images/text/notice.png" alt="노티스 타이틀">
+        </h1><!--notice_title-->
+        <div>
+            <table id="table_inner">
+                <tr class="boreder_title">
+                    <th width="15%" style="border-radius: 40px 0 0 45px; ">번호</th>
+                    <th width="*">제목</th>
+                    <th width="15%" style="border-radius: 0 40px 40px 0;">작성일 &nbsp;&nbsp;&nbsp;</th>
+                </tr>
+                <tr>
+                    <td width="15%">1</td>
+
+                    <td width="*"><a href="#">뮤지컬&lt;마리 앙투아네트&gt; 마지막 티켓 오픈 안내</a></td>
+
+                    <td width="15%">2023.2.8 &nbsp;&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td width="15%">2</td>
+
+                    <td width="*"><a href="#">뮤지컬&lt;빨래&gt; 공연 지연 관련 보상 안내드립니다.(2/3 공연) </a></td>
+
+                    <td width="15%">2023.1.16 &nbsp;&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+
+                    <td> <a href="#">뮤지컬&lt;빨래&gt; 공연 지연 안내 드립니다.(2/3 공연) </a></td>
+
+                    <td>2023.1.13 &nbsp;&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td width="15%">4</td>
+
+                    <td width="*"><a href="#">뮤지컬&lt;마리 앙투아네트&gt; 캐스팅 변경 안내 (1.21 공연) </a></td>
+
+                    <td width="15%">2022.12.27 &nbsp;&nbsp;&nbsp;</td>
+                </tr>
+            </table>
+        </div><!--list_table-->
+    </div><!--notice-->
+
+
+    <div id="footer">
+        <!--배경이미지-->
+        <div class="footer_inner">
+            <!--가운데정렬ㄴ-->
+            <h1 class="logo"><a href="./index2.html"><img src="./images/footer_logo.png" alt="로고"></a></h1>
+            <div>
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li> | </li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li> | </li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li> | </li>
+                    <li><a href="#">사이트이용안내</a></li>
+                </ul>
+
+                <p><span class="josefin">APOLLO ENTERTAIN</span>㈜</p>
+                <p> 부산광역시 중구 중앙대로 26 다원중앙타원 9층 전화번호:051)245-1650 팩스번호:051)2456-12345 이메일:APOLLO@APOLLO.COM <br> 사업자
+                    등록번호:110-11-11111 통신판매업신고:부산222222호 대표자 : 김정철 <br> Copytightⓒ2020APOLLOENTERTAIN.CO.LTD ALL
+                    RIGHTS
+                    RESERVED.</p>
+            </div>
+            <ul class="sns">
+                <li><a target="_blank" href="https://twitter.com/?lang=ko"><img src="./images/ICON/twiter_sns.png"
+                            alt="트위터"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/"><img src="./images/ICON/inster_sns.png"
+                            alt="인스타"></a></li>
+                <li><a target="_blank" href=https://ko-kr.facebook.com /><img src="./images/ICON/facebook_sns.png"
+                        alt="페이스북"></a></li>
+                <li><a target="_blank"
+                        href="https://play.google.com/store/apps/details?id=com.kakao.talk&hl=ko&gl=US&pli=1"><img
+                            src="./images/ICON/kakao_sns.png" alt="카카오톡"></a></li>
+        </div><!--footer_inner-->
+    </div><!--footer-->
+    <div id="top">
+        <div class="top_button">
+            <a href="#"><img src="./images/ICON/TOP_Arrow(UP).png" alt="위로버튼"></a>
+        </div><!--top_button-->
+    </div><!--top-->
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mainbanner", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            speed: 1000,
+            loop: true,
+            /*쉼표는 다음옵션을 추가하기 위해 꼭 넣어주세요!*/
+            /*새로운 옵션 추가하는 위치*/
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".concert", {
+            slidesPerView: 4,
+            /*한번에 보여주는 swiper-slide를 갯수*/
+            spaceBetween: 50,
+            /*swiper-slide들 사이의 여백을 지정. 30 = 30px*/
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".card", {
+
+            pagination: {
+                clickable: true,
+            },//도트부분을 작동하게 하는 옵션.
+            autoplay: {
+                delay: 2000,
+                /*이미지가 자동으로 넘어가는 시간설정. 1000 = 1초*/
+                disableOnInteraction: false,
+            },
+            loop: true,
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 30,
+        });//지우면 안되요!
+
+    </script>
+</body>

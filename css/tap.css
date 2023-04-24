@@ -1,0 +1,368 @@
+/*영어 사용 시 - font-family: 'Josefin Sans', sans-serif;*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+body {
+    background-color: #ded1c8;
+    min-width: 1320px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+    ;
+}
+
+.josefin {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+#header {
+    position: relative;
+    background-color: #393333;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#logo {
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    padding-left: 30px;
+}
+
+
+#header ul {
+    display: flex;
+}
+
+#header ul li {
+    color: #fef7e6;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 33px;
+
+}
+
+#header ul li:hover {
+    font-size: 16px;
+    background-color: #fef7e6;
+    transition: all 0.5s;
+    color: #9b1c1f;
+}
+
+/*뮤지컬 탭 시작*/
+
+#musical {
+    position: relative;
+    margin: 0 auto;
+    height: 770px;
+    display: flex;
+    background: url(../images/bg/schedule_bg.png);
+    padding: 60px 50px;
+}
+
+#musical h1 {
+    padding-left: 90px;
+    padding-right: 50px;
+}
+
+.tabs {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 40px;
+    background-color: #ded1c8;
+    box-shadow: 0 0 10px rgba(147, 26, 26, 0.2);
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 탭 스타일 */
+.tab_item {
+    width: calc(100%/3);
+    height: 50px;
+    border-bottom: 3px solid #ded1c8;
+    background-color: #333333;
+    line-height: 50px;
+    font-size: 16px;
+    color: #ded1c8;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.tab_item:hover {
+    opacity: 0.75;
+}
+
+/* 라디오 버튼 UI삭제*/
+input[name="tab_item"] {
+    display: none;
+    text-align: center;
+    align-items: center;
+}
+
+/* 탭 컨텐츠 스타일 */
+.tab_content {
+    display: none;
+    padding: 20px;
+    clear: both;
+    overflow: hidden;
+}
+
+.tab_content ul {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* 선택 된 탭 콘텐츠를 표시 */
+#all:checked~#all_content,
+#programming:checked~#programming_content,
+#design:checked~#design_content {
+    display: block;
+}
+
+/* 선택된 탭 스타일 */
+.tabs input:checked+.tab_item {
+    background-color: #9b1c1f;
+    color: #fef7e6;
+}
+
+/* 뮤지컬 탭 끝 */
+
+/* 연극 탭 시작 */
+
+#play {
+    position: relative;
+    margin: 0 auto;
+    height: 770px;
+    display: flex;
+    background: url(../images/bg/play_bg.png);
+    padding: 60px 50px;
+}
+
+#play h1 {
+    padding-left: 90px;
+    padding-right: 50px;
+}
+
+.play_tabs {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 40px;
+    background-color: #ded1c8;
+    box-shadow: 0 0 10px rgba(147, 26, 26, 0.2);
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 탭 스타일 */
+.tab_item_a {
+    width: calc(100%/2);
+    height: 50px;
+    border-bottom: 3px solid #ded1c8;
+    background-color: #9b1c1f;
+    line-height: 50px;
+    font-size: 16px;
+    color: #ded1c8;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.tab_item_a:hover {
+    opacity: 0.75;
+}
+
+/* 라디오 버튼 UI삭제*/
+input[name="tab_item_a"] {
+    display: none;
+    text-align: center;
+    align-items: center;
+}
+
+/* 탭 컨텐츠 스타일 */
+.play_tab_content {
+    display: none;
+    padding: 20px;
+    clear: both;
+    overflow: hidden;
+}
+
+.play_tab_content ul {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* 선택 된 탭 콘텐츠를 표시 */
+#play_all:checked~#play_all_content,
+#play_programming:checked~#play_programming_content,
+#play_design:checked~#play_design_content {
+    display: block;
+}
+
+/* 선택된 탭 스타일 */
+.play_tabs input:checked+.tab_item_a {
+    background-color: #333333;
+    color: #fef7e6;
+}
+
+/*연극 탭 끝 */
+/* 페스티벌 탭 시작 */
+
+#festi {
+    position: relative;
+    margin: 0 auto;
+    height: 770px;
+    display: flex;
+    background: url(../images/bg/festival_bg.png);
+    padding: 60px 50px;
+}
+
+#festi h1 {
+    padding-left: 90px;
+    padding-right: 50px;
+}
+
+.festi_tabs {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 40px;
+    background-color: #ded1c8;
+    box-shadow: 0 0 10px rgba(147, 26, 26, 0.2);
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 탭 스타일 */
+.tab_item_b {
+    width: calc(100%/3);
+    height: 50px;
+    border-bottom: 3px solid #ded1c8;
+    background-color: #9b1c1f;
+    line-height: 50px;
+    font-size: 16px;
+    color: #ded1c8;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.festi_item_a:hover {
+    opacity: 0.75;
+}
+
+/* 라디오 버튼 UI삭제*/
+input[name="tab_item_b"] {
+    display: none;
+    text-align: center;
+    align-items: center;
+}
+
+/* 탭 컨텐츠 스타일 */
+.festi_tab_content {
+    display: none;
+    padding: 20px;
+    clear: both;
+    overflow: hidden;
+}
+
+.festi_tab_content ul {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* 선택 된 탭 콘텐츠를 표시 */
+#festi_all:checked~#festi_all_content,
+#festi_programming:checked~#festi_programming_content,
+#festi_design:checked~#festi_design_content {
+    display: block;
+}
+
+/* 선택된 탭 스타일 */
+.festi_tabs input:checked+.tab_item_b {
+    background-color: #333333;
+    color: #fef7e6;
+}
+
+#footer {
+    background-color: #393333;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    color: #fef7e6;
+    font-size: 14px;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.footer_inner a {
+    color: #fef7e6;
+}
+
+.footer_inner ul {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.footer_inner ul li {
+    padding-right: 10px;
+    font-weight: bold;
+
+}
+
+.logo {
+    align-items: center;
+    height: 200px;
+    display: flex;
+}
+
+#top {
+    display: inline-block;
+    padding: 20px;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    z-index: 99;
+}
