@@ -235,7 +235,7 @@ input[name="tab_item_a"] {
 
 /* 선택된 탭 스타일 */
 .play_tabs input:checked+.tab_item_a {
-    background-color: #333333;
+    background-color: #9b1c1f;
     color: #fef7e6;
 }
 
@@ -318,7 +318,7 @@ input[name="tab_item_b"] {
 
 /* 선택된 탭 스타일 */
 .festi_tabs input:checked+.tab_item_b {
-    background-color: #333333;
+    background-color: #9b1c1f;
     color: #fef7e6;
 }
 
