@@ -394,6 +394,7 @@ label {
 }
 
 #last {
+    overflow: hidden;
     margin: 100px 0;
     height: 880px;
     width: 100%;
