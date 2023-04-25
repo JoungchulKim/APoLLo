@@ -188,7 +188,7 @@ input[name="tab_item"] {
     width: calc(100%/2);
     height: 50px;
     border-bottom: 3px solid #ded1c8;
-    background-color: #9b1c1f;
+    background-color: #333333;
     line-height: 50px;
     font-size: 16px;
     color: #ded1c8;
@@ -271,7 +271,7 @@ input[name="tab_item_a"] {
     width: calc(100%/3);
     height: 50px;
     border-bottom: 3px solid #ded1c8;
-    background-color: #9b1c1f;
+    background-color: #333333;
     line-height: 50px;
     font-size: 16px;
     color: #ded1c8;
